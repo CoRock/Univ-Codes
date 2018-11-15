@@ -47,6 +47,30 @@ namespace Lec181113.Array
             return y;
         }
 
+        static int[,] mul(int[,] a, int[,] b)
+        {
+            int m = a.GetLength(0);
+            int n = a.GetLength(1);
+            int l = b.GetLength(1);
+
+            int[,] c = new int[m, l];
+
+            for (int i = 0; i < m; i++)
+            {
+                for (int j = 0; j < l; j++)
+                {
+                    int sum = 0;
+                    for (int k = 0; k < l; k++)
+                    {
+                        sum = sum + a[i, k] * b[k, j];
+                    }
+                    c[i, j] = sum;
+                }
+            }
+            
+            return c;
+        }
+
         static void print(int[,] x)
         {
             for (int i = 0; i < x.GetLength(0); i++)
@@ -78,11 +102,17 @@ namespace Lec181113.Array
             print(z);
 
             z = sub(x, y);
+
             Console.WriteLine("subtract: ");
             print(z);
 
             z = mul(3, x);
-            Console.WriteLine("multiply: ");
+            Console.WriteLine("scalar multiplication: ");
+            print(z);
+
+            int[,] p = { { 100, 50 }, { 200, 150 }, { 150, 70 } };
+            z = mul(x, p);
+            Console.WriteLine("matrix multiplication: ");
             print(z);
         }
     }
