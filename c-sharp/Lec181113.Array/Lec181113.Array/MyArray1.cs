@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lec181113.Array
 {
-    class Program
+    class MyArray1
     {
         // function overloading
         static int getSum(int[][] s)
@@ -34,7 +34,6 @@ namespace Lec181113.Array
                     sum = sum + s[i, j];
                 }
             }
-
             return sum;
         }
 
