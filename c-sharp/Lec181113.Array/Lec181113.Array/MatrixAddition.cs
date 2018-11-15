@@ -34,6 +34,19 @@ namespace Lec181113.Array
             return c;
         }
 
+        static int[,] mul(int c, int[,] x)
+        {
+            int m = x.GetLength(0);
+            int n = x.GetLength(1);
+            int[,] y = new int[m, n];
+
+            for (int i = 0; i < m; i++)
+                for (int j = 0; j < n; j++)
+                    y[i, j] = c * x[i, j];
+
+            return y;
+        }
+
         static void print(int[,] x)
         {
             for (int i = 0; i < x.GetLength(0); i++)
@@ -66,6 +79,10 @@ namespace Lec181113.Array
 
             z = sub(x, y);
             Console.WriteLine("subtract: ");
+            print(z);
+
+            z = mul(3, x);
+            Console.WriteLine("multiply: ");
             print(z);
         }
     }
