@@ -21,6 +21,17 @@ namespace Lec181113.Array
             return c;
         }
 
+        static void print(int[,] x)
+        {
+            for (int i = 0; i < x.GetLength(0); i++)
+            {
+                for (int j = 0; j < x.GetLength(1); j++)
+                    Console.Write(x[i, j] + " ");
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+
         static void Main(string[] args)
         {
             int[,] x = new int[2, 3];
@@ -38,12 +49,7 @@ namespace Lec181113.Array
 
             z = add(x, y);
 
-            for (int i = 0; i < 2; i++)
-            {
-                for (int j = 0; j < 3; j++)
-                    Console.Write(z[i, j] + " ");
-                Console.WriteLine();
-            }
+            print(z);
         }
     }
 }
