@@ -21,6 +21,19 @@ namespace Lec181113.Array
             return c;
         }
 
+        static int[,] sub(int[,] a, int[,] b)
+        {
+            int m = a.GetLength(0);
+            int n = a.GetLength(1);
+            int[,] c = new int[m, n];
+
+            for (int i = 0; i < m; i++)
+                for (int j = 0; j < n; j++)
+                    c[i, j] = a[i, j] - b[i, j];
+
+            return c;
+        }
+
         static void print(int[,] x)
         {
             for (int i = 0; i < x.GetLength(0); i++)
@@ -48,7 +61,11 @@ namespace Lec181113.Array
             int[,] z;
 
             z = add(x, y);
+            Console.WriteLine("add: ");
+            print(z);
 
+            z = sub(x, y);
+            Console.WriteLine("subtract: ");
             print(z);
         }
     }
