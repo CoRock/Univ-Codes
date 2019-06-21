@@ -39,7 +39,7 @@ class List {
 	}
 }
 
-class Test4 {
+public class Test4 {
 	public static void main(String[] args) {
 		int data[] = { 1, 2, 3, 4, 5 };
 		List l = new List();
