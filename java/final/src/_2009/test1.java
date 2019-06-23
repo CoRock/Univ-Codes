@@ -30,7 +30,7 @@ class Stack {
 	}
 }
 
-class Test1 {
+public class Test1 {
 	public static void main(String[] args) {
 		int data[] = { 1, 2, 3, 4, 5 };
 		Stack stack = new Stack();

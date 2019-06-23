@@ -3,7 +3,7 @@ package _2009;
 /**
  * 문제 2. 다음 프로그램의 출력을 쓰시오.
  */
-class Test2 {
+public class Test2 {
 	public static void main(String[] args) {
 		int data[] = { 1, 2, 3, 4, 5 };
 		int x[][];
