@@ -23,7 +23,7 @@ class Node {
 	}
 }
 
-class Test4 {
+public class Test4 {
 	public static void main(String args[]) {
 		int data[] = { 1, 2, 3, 4, 5 };
 		Node t1 = new Node(data[0]);

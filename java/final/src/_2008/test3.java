@@ -34,7 +34,7 @@ class Tiger extends Animal {
 	}
 }
 
-class Test3 {
+public class Test3 {
 	public static void main(String args[]) {
 		Animal a = new Animal();
 		Animal b = new Bear();

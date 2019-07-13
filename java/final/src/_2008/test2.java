@@ -41,7 +41,7 @@ class Point {
 	}
 }
 
-class Test2 {
+public class Test2 {
 	public static void main(String args[]) {
 		int key[] = { 6,2,7,3,1 };
 
