@@ -45,7 +45,9 @@
   <ItemGroup>
     <None Include="MyArray2.cs" />
     <None Include="MyArray1.cs" />
-    <Compile Include="MatrixAddition.cs" />
+    <None Include="MatrixAddition.cs" />
+    <None Include="MatrixOOP.cs" />
+    <Compile Include="MatrixFlexible.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
