@@ -27,7 +27,7 @@ class Bit {
 	}
 }
 
-class Test1 {
+public class Test1 {
 	public static void main(String args[]) {
 		int key[] = { 1, 2, 3, 4, 5 };
 
